@@ -1,0 +1,72 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+ext {
+
+    compileSdkVer = 26
+    targetSdkVer = 26
+    minSdkVer = 16
+    supportLibVersion= '26.1.0'
+    //rx
+    glideVersion = '4.6.1'//3.8.0
+    afollestadDialogVer = "0.9.6.0"
+    photoViewVer = "2.1.2"
+    eventBusVer = "3.0.0"
+    statusbarUtilVer = "1.3.6"
+    fastjsonVer = "1.1.54.android"
+    butterknifeVer = "8.4.0"
+
+    easyrecyclerviewVer = '4.4.0'
+    calendarviewVer = '1.4.3'
+    rxpermissionsVer = '0.9.5@aar'
+
+    rxJavaVer = '2.1.2'
+//    rxAndroidVer = '2.0.1'
+    xEditTextVer = '2.0.7'
+    rxAndroidVer = '1.2.1'
+
+    countdownviewVer = '2.1.6'
+    ratingbarVer = '1.1.2'
+    baseRecyclerViewAdapterHelperVer = '2.9.34'
+    actionsheetVer = '1.1.7'
+    rxpermissionsVer = '0.9.4@aar'
+    gsyVideoVer	 = '2.1.1'
+    aviVer = '2.1.3'
+    smallVideoVer=  '2.0.3@aar'
+    squareprogressbarVer= '1.6.3'
+    itemdecorationVer='1.1.1@aar'
+    swipelayoutVer= '1.2.0@aar'
+    uploadServiceVersion = "3.4.1"
+    jpushVer = '3.1.1'
+    jcoreVer = '1.1.9'
+    ratiolayoutVer = '2.1.0'
+    lsettingviewlibraryVer = '1.7.0'
+    pictureSelectorVer = 'v2.2.0'
+    shapeImageVer='0.9.+@aar'
+    dropDownMenuVer = 'v0.9'
+    slantedTextviewVer=1.2
+
+}
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

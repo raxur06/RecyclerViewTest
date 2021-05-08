@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/padding"
+    app:contentPadding="@dimen/padding"
+    app:cardElevation="@dimen/padding"
+    android:layout_marginLeft="@dimen/padding"
+    android:layout_marginRight="@dimen/padding"
+    >
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<!--
+    <com.hss.commonlibrary.widget.CircleImageView
+        android:layout_width="@dimen/dp44"
+        android:layout_height="@dimen/dp44"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:civ_border_color="@color/colorAccent"
+        app:civ_border_width="@dimen/dp1"
+        android:id="@+id/civ_head"
+        android:src="@drawable/default_head"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/civ_head"
+        android:textColor="@color/color_text_assist"
+        android:textSize="@dimen/text_size_14"
+        android:id="@+id/tv_date"
+        android:gravity="top"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/civ_head"
+        android:layout_marginLeft="@dimen/dp20"
+        app:layout_constraintTop_toTopOf="@+id/civ_head"
+        app:layout_constraintRight_toLeftOf="@+id/tv_date"
+        android:textColor="@color/color_text_main"
+        android:textSize="@dimen/text_size_14"
+        android:id="@+id/tv_title"
+        android:gravity="top"
+        />
+&lt;!&ndash;    style="@style/singleline"&ndash;&gt;
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/civ_head"
+        android:layout_marginLeft="@dimen/dp20"
+        app:layout_constraintBottom_toBottomOf="@+id/civ_head"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/color_text_assist"
+        android:textSize="@dimen/text_size_14"
+        android:id="@+id/tv_subtitle"
+        android:gravity="bottom"
+        />
+    &lt;!&ndash;        style="@style/singleline"
+&ndash;&gt;
+        <View   android:layout_width="0dp"
+            android:layout_height="@dimen/dp1"
+            android:background="@color/color_divider"
+            app:layout_constraintLeft_toRightOf="@+id/civ_head"
+            app:layout_constraintTop_toBottomOf="@+id/civ_head"
+            android:layout_marginTop="@dimen/dp15"
+            />-->
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/color_text_assist"
+        android:textSize="@dimen/text_size_14"
+        android:id="@+id/tv_date"
+        android:gravity="top"
+        />
+
+ <!--   <android.support.v7.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/civ_head"
+        android:layout_marginLeft="@dimen/dp20"
+        app:layout_constraintTop_toTopOf="@+id/civ_head"
+        app:layout_constraintRight_toLeftOf="@+id/tv_date"
+        android:textColor="@color/color_text_main"
+        android:textSize="@dimen/text_size_14"
+        android:id="@+id/tv_title"
+        android:gravity="top"
+        />-->
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date"
+        android:textColor="@color/color_text_assist"
+        android:textSize="@dimen/text_size_14"
+        android:id="@+id/tv_subtitle"
+        android:gravity="bottom"
+        android:layout_marginTop="@dimen/padding"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
