@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.hss.recyclerviewtest.decoration.SpaceDecoration;
+import com.hss.recyclerviewtest.layoutmanager.PageLayoutManager;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -16,7 +17,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     RecyclerView rcv;
-    MessagesAdapter messagesAdapter;
+    ImagesAdapter messagesAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,12 +27,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void initRecyclerView() {
-        rcv.setLayoutManager(new LinearLayoutManager(this));
+        rcv.setLayoutManager(new PageLayoutManager(this));
         SpaceDecoration spaceDecoration = new SpaceDecoration(true,100);
         rcv.addItemDecoration(spaceDecoration);
         rcv.setHasFixedSize(false);
         if (messagesAdapter == null){
-            messagesAdapter = new MessagesAdapter();
+            messagesAdapter = new ImagesAdapter();
         }
         List<String > list = new ArrayList<>();
          for (int i=0;i<50;i++){
@@ -77,17 +78,17 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void  addData(@NonNull Collection<? extends String > newData){
-        if (messagesAdapter !=null){
-            messagesAdapter.addData(newData);
-        }
-    }
-
-    public void setNewData(@Nullable List<String> data){
-        if (messagesAdapter !=null){
-            messagesAdapter.setNewData(data);
-        }
-    }
+//    public void  addData(@NonNull Collection<? extends String > newData){
+//        if (messagesAdapter !=null){
+//            messagesAdapter.addData(newData);
+//        }
+//    }
+//
+//    public void setNewData(@Nullable List<String> data){
+//        if (messagesAdapter !=null){
+//            messagesAdapter.setNewData(data);
+//        }
+//    }
     public int  getAdapterDataSize(){
         if (messagesAdapter !=null){
             return  messagesAdapter.getData().size();
