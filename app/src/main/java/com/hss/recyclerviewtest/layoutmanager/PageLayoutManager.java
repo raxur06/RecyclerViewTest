@@ -9,8 +9,10 @@ import android.view.View;
 
 /**
  * https://www.jianshu.com/p/34a0ef2d806d?utm_medium=email&utm_source=gank.io
- *
+ *  SnapHelper
  * https://www.jianshu.com/p/ef3a3b8d0a77
+ *
+ * https://www.jianshu.com/p/e54db232df62
  */
 public class PageLayoutManager extends LinearLayoutManager {
     private RecyclerView mRecyclerView;

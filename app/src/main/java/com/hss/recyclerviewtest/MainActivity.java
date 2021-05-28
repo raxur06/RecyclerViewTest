@@ -5,7 +5,9 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.LinearSnapHelper;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SnapHelper;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.hss.recyclerviewtest.decoration.SpaceDecoration;
@@ -17,7 +19,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     RecyclerView rcv;
-    ImagesAdapter messagesAdapter;
+    MessagesAdapter messagesAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,12 +29,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void initRecyclerView() {
-        rcv.setLayoutManager(new PageLayoutManager(this));
+        rcv.setLayoutManager(new LinearLayoutManager(this));
+        SnapHelper snapHelper = new LinearSnapHelper();
+        snapHelper.attachToRecyclerView(rcv);
+
         SpaceDecoration spaceDecoration = new SpaceDecoration(true,100);
         rcv.addItemDecoration(spaceDecoration);
         rcv.setHasFixedSize(false);
         if (messagesAdapter == null){
-            messagesAdapter = new ImagesAdapter();
+            messagesAdapter = new MessagesAdapter();
         }
         List<String > list = new ArrayList<>();
          for (int i=0;i<50;i++){
