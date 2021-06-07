@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/tv_child"
+        android:background="@color/colorPrimary"
+        app:layout_behavior="com.hss.recyclerviewtest.behavior.EasyBehavior"
+        />
+<!--app:layout_behavior="com.hss.recyclerviewtest.behavior.EasyBehavior"-->
+
+    <Button android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="被观察者"
+        android:id="@+id/btn_observed"/>
+</android.support.design.widget.CoordinatorLayout>
